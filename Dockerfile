@@ -2,7 +2,7 @@
 FROM python:3.9
 
 # 2. 设置工作目录
-WORKDIR /app
+WORKDIR /djangoProject
 
 # 3. 复制 requirements.txt
 COPY requirements.txt .
