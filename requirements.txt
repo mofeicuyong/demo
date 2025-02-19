@@ -1,0 +1,4 @@
+python==3.9
+Django==4.2
+numpy==1.26.3
+pandas==2.1.4
