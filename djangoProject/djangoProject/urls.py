@@ -17,9 +17,12 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
-from hello.views import hello_page  # 导入我们刚才写的视图
+from hello.views import hello_page
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', hello_page),  # 添加此行
+    path('', hello_page),
+    path('api/users/', include('users.urls')),
+
 ]
