@@ -13,9 +13,9 @@ LOOK_BACK = 20
 TRAIN_RATIO = 0.8
 EPOCHS = 100
 BATCH_SIZE = 32
-
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 stock_name = {
-    "apple": "F:/apple_stock.csv"
+    "apple": os.path.join(BASE_DIR, "apple_stock.csv")
 }
 
 model_dir = "models"
